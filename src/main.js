@@ -10,6 +10,9 @@ import router from '@/router'
 // import vuex
 import store from '@/store'
 
+// 按需引入element-ui
+import '@/plugins/element-ui'
+
 Vue.config.productionTip = false
 
 new Vue({

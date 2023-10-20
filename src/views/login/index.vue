@@ -41,6 +41,7 @@
 </template>
 
 <script>
+import { login } from '@/api/login'
 export default {
   data () {
     return {
@@ -53,7 +54,15 @@ export default {
   },
   methods: {
     handleLogin () {
-      this.$router.push({ path: 'test' })
+      console.log(123);
+      login(
+        'fuint',
+        '123456',
+        '74nd',
+        '5e6e49b38a0a4e9f97206eb0df09e8f7'
+      )
+        .then(res => console.log('success', res))
+        .catch(err => console.log('error', err))
     }
   }
 }

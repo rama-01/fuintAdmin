@@ -1,29 +1,29 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from "vue";
+import Router from "vue-router";
 
-Vue.use(Router)
+Vue.use(Router);
 
 // constant routes
 const constantRoutes = [
   {
-    path: '/',
-    redirect: '/login'
+    path: "/",
+    redirect: "/login",
   },
   {
-    path: '/login',
-    component: () => import('@/views/login')
+    path: "/login",
+    component: () => import("@/views/login"),
   },
   {
-    path: '/test',
-    component: () => import('@/views/test')
+    path: "/test",
+    component: () => import("@/views/test"),
     // 放置路由表最后面
   },
   {
-    path: '*',
-    component: () => import('@/views/error/404.vue')
-  }
-]
+    path: "*",
+    component: () => import("@/views/error/404.vue"),
+  },
+];
 
 export default new Router({
-  routes: constantRoutes
-})
+  routes: constantRoutes,
+});

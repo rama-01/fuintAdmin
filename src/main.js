@@ -14,9 +14,9 @@ import store from "@/store";
 import "@/plugins/element-ui";
 
 // import axios interceptors
-import service from "@/utils/request";
+// import service from "@/utils/request";
 
-console.log(service);
+// console.log(service);
 
 Vue.config.productionTip = false;
 

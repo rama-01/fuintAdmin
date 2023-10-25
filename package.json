@@ -39,7 +39,10 @@
     "postcss": "^8.4.31",
     "postcss-loader": "^7.3.3",
     "prettier": "^3.0.3",
-    "vue-template-compiler": "^2.6.14"
+    "sass": "^1.69.4",
+    "sass-loader": "^13.3.2",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^5.89.0"
   },
   "eslintConfig": {
     "root": true,

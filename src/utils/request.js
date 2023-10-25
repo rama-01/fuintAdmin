@@ -11,7 +11,14 @@ const service = axios.create({
 service.interceptors.request.use(
   (config) => {
     // Do something before request is sent
-    config.headers.platform = "PC";
+    // get请求映射params参数
+    // if (config.method === 'get' && config.params) {
+    //   let url = config.url + '?' + tansParams(config.params);
+    //   url = url.slice(0, -1);
+    //   config.params = {};
+    //   config.url = url;
+    // }
+    console.log("request have been sent", config);
     return config;
   },
   (error) =>

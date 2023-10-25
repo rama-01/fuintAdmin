@@ -2,13 +2,19 @@ import request from "@/utils/request";
 
 // 用户登录
 export const login = (username, password, captchaCode, uuid) =>
-  request({
+  request.post({
     url: "/backendApi/login/doLogin",
-    method: "post",
     data: {
       username,
       password,
       captchaCode,
       uuid,
     },
+  });
+
+// 获取图形验证码
+export const getCodeImg = () =>
+  request({
+    url: "/backendApi/captcha/getCode",
+    method: "get",
   });
